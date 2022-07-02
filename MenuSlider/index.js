@@ -28,34 +28,27 @@ const validateEmail = (email) => {
     );
 };
 
+//CHcec required fields
+function checkRequired(inputArr) {
+  inputArr.forEach(function (input) {
+    if (input.value.trim() === "") {
+      showError(input, `${getFiledName(input)} is required`);
+    } else {
+      showSuccess(input);
+    }
+  });
+}
+
+//Get fieldname
+function getFiledName(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
 //Event listeners
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  if (username.value === "") {
-    showError(username, "User name is required");
-  } else {
-    showSuccess(username);
-  }
+  checkRequired([username, email, password, password2]);
 
-  if (email.value === "") {
-    showError(email, "Email is required");
-  } else if (!validateEmail(email.value)) {
-    showError(email, "Email is not valid");
-  } else {
-    showSuccess(email);
-  }
-
-  if (password.value === "") {
-    showError(password, "Password is required");
-  } else {
-    showSuccess(password);
-  }
-
-  if (password2.value === "") {
-    showError(password2, "Password again is required");
-  } else {
-    showSuccess(password2);
-  }
   console.log(username.value);
 });
