@@ -4,40 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" type="module"></script>
-    <title>Form Validator</title>
+    <title>Document</title>
   </head>
   <body>
+    <nav>
+      <div class="logo">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="user" />
+      </div>
+      <ul>
+        <li><a href="#"> Home</a></li>
+        <li><a href="#"> Portfolio</a></li>
+        <li><a href="#"> Blog</a></li>
+        <li><a href="#"> Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1>MY Landing Page</h1>
+
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+        mollitia.
+      </p>
+
+      <button class="cta-btn" id="open">Sing Up</button>
+    </header>
+
     <div class="container">
-      <form id="form" class="form">
-        <h2>Register With Us</h2>
-        <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Enter username" />
-          <small>Error message</small>
+      <h2>What is this landing page about</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        minima neque atque optio dicta quas minus rem necessitatibus deserunt.
+        Sed adipisci reiciendis distinctio obcaecati veritatis facere, a
+        explicabo optio! Nihil, laudantium eius velit nisi dolores non nobis
+        fuga dicta quasi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        explicabo ad, eaque dolor tempore sapiente animi nobis. Sed, facere
+        veniam.
+      </p>
+
+      <h2>Tell me More</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        ratione, excepturi voluptatibus debitis nam fugiat veniam est? Alias,
+        ducimus consequatur. Impedit itaque a deleniti numquam odio libero vel
+        excepturi cum vitae, reiciendis unde veritatis, aperiam eligendi!
+        Accusamus laudantium tempore modi!
+      </p>
+
+      <h2>Plan</h2>
+      <ul>
+        <li>Plan</li>
+        <li>Coffe</li>
+        <li>...</li>
+        <li>Profit</li>
+      </ul>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+        exercitationem, earum sapiente ad dolorum eum accusamus eligendi, nam,
+        optio odit accusantium rem necessitatibus id quae. Debitis incidunt
+        dolore voluptatum illo eos, natus adipisci error, praesentium aliquam
+        tenetur laudantium deleniti tempora excepturi hic nisi numquam
+        repudiandae? Voluptas ipsam commodi exercitationem laboriosam saepe in
+        molestiae fugit maiores nobis. Totam id quas, consectetur modi voluptas
+        quidem vel quisquam, saepe eius voluptate deserunt voluptatum.
+      </p>
+    </div>
+
+    <!--Modal-->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sing Up</h3>
         </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Enter email" />
-          <small>Error message</small>
+        <div class="modal-conten">
+          <p>Registred with us to get offers</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter Name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter Email" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="name" placeholder="Enter Password" />
+            </div>
+            <div>
+              <label for="password2"> Confirm passworld</label>
+              <input
+                type="password"
+                id="password2"
+                placeholder="Confirm Password"
+              />
+            </div>
+          </form>
         </div>
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter password" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="password2">Confirm Password</label>
-          <input
-            type="password"
-            id="password2"
-            placeholder="Enter password again"
-          />
-          <small>Error message</small>
-        </div>
-        <button>Submit</button>
-      </form>
+      </div>
     </div>
   </body>
 </html>
