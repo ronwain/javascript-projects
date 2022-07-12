@@ -1,0 +1,47 @@
+* { box-sizing: border-box;}
+
+body {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     overflow: hidden;
+     margin: 0%;
+     background-color: rgb(71, 8, 131);
+}
+
+h3 {
+     color: #fff;
+     margin: 16px 0 24px ;
+} 
+
+.conatiner {
+     width: 480px;
+}
+
+textarea {
+     border: none;
+     display: block;
+     width: 100%;
+     height: 120px;
+     font-family: inherit;
+     padding: 8px;
+     margin: 0 0 24px;
+     font-size: 16px;
+}
+
+.tag {
+     background-color: aqua;
+     color: blue;
+     border-radius: 48px;
+     padding: 16px 24px;
+     margin: 0 8px 16px 0;
+     font-size: 16px;
+     display: inline-block;
+}
+
+.tag.highlight {
+     background-color:lightpink
+}
