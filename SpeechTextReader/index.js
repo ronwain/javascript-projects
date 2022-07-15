@@ -9,7 +9,7 @@ const closeBtn = document.getElementById("close");
 
 const data = [
   {
-    image: "./SpeechTextReader/Pictures/auto.png",
+    image: "Pictures/auto.png",
     text: "Auto",
   },
   {
@@ -33,7 +33,7 @@ const data = [
     text: "It is hurt",
   },
   {
-    image: " /SpeechTextReader/Pictures/food.jpg",
+    image: " SpeechTextReader/Pictures/food.jpg",
     text: "It is hurt",
   },
 ];
